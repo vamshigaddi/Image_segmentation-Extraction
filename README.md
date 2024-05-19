@@ -7,7 +7,6 @@ This project uses FastSAM for object segmentation and extraction. The project al
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Introduction
@@ -93,15 +92,20 @@ for idx, result in enumerate(everything_results):
         output_filename = os.path.join(output_folder, f'object_{idx}_{mask_idx}.png')
         plt.imsave(output_filename, new_image.astype(np.uint8), format='png', dpi=300)
 ```
-## Contributing
-Contributions are welcome! If you'd like to contribute to the project, please follow these steps:
+## Example Image
+- Here is an example of an original image used in this project:
 
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Make your changes.
-4. Commit your changes (`git commit -m 'Add some feature'`).
-5. Push to the branch (`git push origin feature-branch`).
-6. Open a pull request.
+<img src="https://i.postimg.cc/mZHnsbXH/orginal-image.jpg" alt="Original Image" width="300"/>
+
+- This is the segmented Image
+
+<img src="https://i.postimg.cc/CKNdQTDB/Segmented-image.jpg" alt="Segmented_Image" width="300"/>
+
+- one sample result of extracted object from segmented image
+
+<img src="https://i.postimg.cc/7PMGCzbM/object-0-1.png" alt="Segmented_Image" width="300"/>
+
+
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
